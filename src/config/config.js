@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const getPrefix = () => {
-  const env = process.env.NODE_ENV || 'development';
+  const env = process.env.NODE_ENV || 'production';
   const envPrefixMap = {
     development: 'DATABASE',
     test: 'TEST_DATABASE',
